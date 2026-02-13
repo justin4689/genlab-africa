@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
 
+html {
   scroll-behavior: smooth;
 }
 
@@ -28,8 +30,10 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 109px;
 }
 
 .logo {
@@ -69,8 +73,6 @@
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 5px;
-  color: #000;
-  font-size: 16px;
 }
 
 .nav-link:hover,
@@ -79,16 +81,14 @@
   color: #fff;
 }
 
-.header {
-  margin-bottom: 109px;
-}
 .hero {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  max-width: 1500px;
+
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  padding: 0 20px;
 }
 
 .hero-title {
@@ -128,10 +128,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 0;
+  overflow: hidden;
+  gap: 0px;
+}
+
+#lottie-container {
+  width: 500px;
+  height: 500px;
+  flex: 0 0 auto;
 }
 
 .hero-images img {
   border: 10px solid #fff;
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+  flex: 0 0 auto;
 }
 
 .banner {
@@ -159,7 +172,6 @@
   font-weight: 500;
   color: #000;
   text-align: center;
-  margin-top: 63px;
 }
 .description {
   font-size: 18px;
@@ -169,11 +181,39 @@
 }
 /*Nos tests*/
 
+.tests {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tests,
+.how-it-works,
+.why-choose-us,
+.testimonials {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.tests .title,
+.how-it-works .title,
+.why-choose-us .title,
+.testimonials .title {
+  margin-top: 0;
+}
+
+.tests .description,
+.how-it-works .description,
+.why-choose-us .description,
+.testimonials .description {
+  margin-top: 12px;
+}
+
 .tests-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 103px;
-  margin-top: 63px;
+  gap: 48px;
+  margin-top: 40px;
   justify-items: center;
 }
 
@@ -214,7 +254,6 @@
 
 /*how-it-works*/
 .how-it-works {
-  margin-top: 63px;
   background-color: var(--primary-color);
   opacity: 0.8;
 }
@@ -230,13 +269,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .steps {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 32px;
   width: 35%;
 }
 .step {
@@ -271,10 +310,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 73px 0;
-  max-width: 1500px;
+  padding: 0;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
 }
 
 .item {
@@ -296,10 +338,8 @@
   width: 600px;
 }
 
-
 .testimonials {
-  background-color: rgb(206, 235, 206 ,0.8);
-  padding: 60px 20px 30px;
+  background-color: rgb(206, 235, 206, 0.8);
 }
 
 .testimonials .title {
@@ -314,10 +354,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  margin-top: 40px;
+  padding: 0 20px;
 }
 .testimonial {
   display: flex;
@@ -347,10 +388,11 @@
 .footer-header {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 40px;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-header > div:first-child {
@@ -393,7 +435,7 @@
 
 .footer hr {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   border: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
