@@ -575,6 +575,9 @@
   text-decoration: none;
   transition: all 0.2s;
 }
+.cta-buttons .hero-button {
+  margin-top: 0;
+}
 .cta-btn-outline:hover {
   background: #fff;
   color: #0a9c0a;

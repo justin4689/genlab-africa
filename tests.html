@@ -101,16 +101,22 @@
     <!-- FILTER BAR -->
     <section class="filter-bar-section">
       <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">
+        <button type="button" class="filter-btn active" data-filter="all">
           Tous les tests
         </button>
-        <button class="filter-btn" data-filter="filiation">Filiation</button>
-        <button class="filter-btn" data-filter="ancestralite">
+        <button type="button" class="filter-btn" data-filter="filiation">
+          Filiation
+        </button>
+        <button type="button" class="filter-btn" data-filter="ancestralite">
           Ancestralité
         </button>
-        <button class="filter-btn" data-filter="sante">Santé</button>
-        <button class="filter-btn" data-filter="identite">Identité</button>
-        <button class="filter-btn" data-filter="judiciaire">
+        <button type="button" class="filter-btn" data-filter="sante">
+          Santé
+        </button>
+        <button type="button" class="filter-btn" data-filter="identite">
+          Identité
+        </button>
+        <button type="button" class="filter-btn" data-filter="judiciaire">
           Judiciaire / Legal
         </button>
       </div>
@@ -995,10 +1001,11 @@
       <p>&copy; 2025 Genlab Africa. Tous droits réservés.</p>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <script>
       AOS.init();
-      lucide.createIcons();
+      if (window.lucide?.createIcons) window.lucide.createIcons();
     </script>
 
     <script>
@@ -1020,8 +1027,23 @@
           sections.forEach((s) => {
             s.style.display = filter === "all" || s.id === filter ? "" : "none";
           });
+
+          if (filter === "all") {
+            document
+              .querySelector(".catalogue")
+              ?.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            document
+              .getElementById(filter)
+              ?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          if (window.AOS?.refreshHard) window.AOS.refreshHard();
+          else if (window.AOS?.refresh) window.AOS.refresh();
         });
       });
+
+      document.querySelector(".filter-btn.active")?.click();
     </script>
   </body>
 </html>
