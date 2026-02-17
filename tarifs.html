@@ -1,12 +1,813 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarifs</title>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Tarifs – GenLab Africa</title>
+    <link rel="icon" href="/assets/icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tarifs.css" />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div
+      class="hero-container"
+      style="
+        min-height: unset;
+        padding-bottom: 0;
+        background: linear-gradient(to bottom, #fff, rgba(10, 156, 10, 0.08));
+      "
+    >
+      <header class="header">
+        <a href="index.html"
+          ><img src="assets/logo.png" alt="GenLab Africa" class="logo"
+        /></a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-icon nav-toggle-icon-menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </span>
+          <span
+            class="nav-toggle-icon nav-toggle-icon-close"
+            style="display: none"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </span>
+        </button>
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a href="tests.html" class="nav-link">Nos tests</a>
+            </li>
+            <li class="nav-item">
+              <a href="tarifs.html" class="nav-link">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a href="apropos.html" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p class="page-hero-tag">Transparent &amp; Accessible</p>
+        <h1 class="page-hero-title">Nos Tarifs</h1>
+        <p class="page-hero-desc">
+          Tous les prix sont indiques en FCFA et incluent l'analyse en
+          laboratoire ainsi que le rapport certifié. Des facilités de paiement
+          sont disponibles sur demande.
+        </p>
+        <span class="page-hero-note">
+          <svg
+            width="16"
+            height="16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          Tarifs valables pour 2026 — sous reserve de modifications
+        </span>
+      </div>
+    </section>
+
+    <!-- STICKY NAV -->
+    <nav class="tarifs-nav-sticky" aria-label="Navigation par categorie">
+      <div class="tarifs-nav-inner">
+        <button class="tarif-nav-btn active" data-target="cat1">
+          Parente directe
+        </button>
+        <button class="tarif-nav-btn" data-target="cat2">Exclusion</button>
+        <button class="tarif-nav-btn" data-target="cat3">Genealogie</button>
+        <button class="tarif-nav-btn" data-target="cat4">
+          Famille avancée
+        </button>
+        <button class="tarif-nav-btn" data-target="cat5">
+          Médico-génétique
+        </button>
+        <button class="tarif-nav-btn" data-target="cat6">Prénatal</button>
+        <button class="tarif-nav-btn" data-target="cat7">Medico-légal</button>
+        <button class="tarif-nav-btn" data-target="cat8">Services</button>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="tarifs-main">
+      <!-- INFO BANNER -->
+      <div class="info-banner">
+        <div class="info-banner-icon">
+          <svg
+            width="22"
+            height="22"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="12" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+        </div>
+        <div class="info-banner-text">
+          <h4>Fourchettes de prix</h4>
+          <p>
+            Les tarifs présentés sont des fourchettes recommandées. Le prix
+            final dépend de la complexité du dossier, du nombre de participants
+            et de l'urgence demandée. Contactez-nous pour un devis personnalisé
+            gratuit.
+          </p>
+        </div>
+      </div>
+
+      <!-- CAT 1 – PARENTE DIRECTE -->
+      <section class="tarif-category" id="cat1">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-blue">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="9" cy="7" r="4" />
+              <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              <path d="M21 21v-2a4 4 0 0 0-3-3.85" />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 01</p>
+            <h2 class="tarif-category-title">Tests de Parente Directe</h2>
+            <p class="tarif-category-sub">Direct Relationship Tests</p>
+          </div>
+        </div>
+        <div class="tarif-table-wrap">
+          <table class="tarif-table">
+            <thead>
+              <tr>
+                <th>Test (FR)</th>
+                <th>Test (EN)</th>
+                <th>Tarif (FCFA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-fr">Test de paternité (simple)</td>
+                <td class="td-en">Standard Paternity Test</td>
+                <td class="td-price">
+                  <span class="price-badge">180 000 – 220 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">
+                  Test de paternité legal (admissible en justice)
+                </td>
+                <td class="td-en">Legal Paternity Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">260 000 – 320 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Test de maternité</td>
+                <td class="td-en">Maternity Test</td>
+                <td class="td-price">
+                  <span class="price-badge">180 000 – 220 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Test de jumeaux (vrais ou faux)</td>
+                <td class="td-en">Twin Zygosity Test</td>
+                <td class="td-price">
+                  <span class="price-badge">150 000 – 180 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Test de fraternité (frères/soeurs)</td>
+                <td class="td-en">Full Siblingship Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">240 000 – 300 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Test de demi-fraternité</td>
+                <td class="td-en">Half-Siblingship Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">240 000 – 300 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Test d'oncle/tante</td>
+                <td class="td-en">Avuncular Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">240 000 – 320 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Test grands-parents</td>
+                <td class="td-en">Grandparentage Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">260 000 – 340 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Reconstruction familiale</td>
+                <td class="td-en">Family Reconstruction Analysis</td>
+                <td class="td-price">
+                  <span class="price-badge premium">300 000 – 450 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Profil ADN individuel</td>
+                <td class="td-en">DNA Profiling</td>
+                <td class="td-price">
+                  <span class="price-badge">120 000 – 160 000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CAT 2 – EXCLUSION -->
+      <section class="tarif-category" id="cat2">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-green">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 02</p>
+            <h2 class="tarif-category-title">
+              Tests de Non-Parente / Exclusion
+            </h2>
+            <p class="tarif-category-sub">Exclusion Tests</p>
+          </div>
+        </div>
+        <div class="tarif-table-wrap">
+          <table class="tarif-table">
+            <thead>
+              <tr>
+                <th>Test (FR)</th>
+                <th>Test (EN)</th>
+                <th>Tarif (FCFA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-fr">Exclusion de paternité</td>
+                <td class="td-en">Paternity Exclusion Test</td>
+                <td class="td-price">
+                  <span class="price-badge">180 000 – 220 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Exclusion biologique generale</td>
+                <td class="td-en">Biological Exclusion Test</td>
+                <td class="td-price">
+                  <span class="price-badge">150 000 – 180 000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CAT 3 – GENEALOGIE -->
+      <section class="tarif-category" id="cat3">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-orange">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path
+                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+              />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 03</p>
+            <h2 class="tarif-category-title">
+              Tests Genealogiques &amp; Ethnicite
+            </h2>
+            <p class="tarif-category-sub">Ancestry &amp; Ethnicity DNA Tests</p>
+          </div>
+        </div>
+        <div class="tarif-table-wrap">
+          <table class="tarif-table">
+            <thead>
+              <tr>
+                <th>Test (FR)</th>
+                <th>Test (EN)</th>
+                <th>Tarif (FCFA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-fr">Origines genetiques completes</td>
+                <td class="td-en">Ancestry &amp; Ethnicity DNA Test</td>
+                <td class="td-price">
+                  <span class="price-badge">180 000 – 260 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Origines africaines detaillées</td>
+                <td class="td-en">African Ancestry Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">220 000 – 300 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">
+                  Analyse du chromosome Y (lignee paternelle)
+                </td>
+                <td class="td-en">Y-DNA Paternal Line Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">240 000 – 300 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">ADN mitochondrial (lignee maternelle)</td>
+                <td class="td-en">mtDNA Maternal Line Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">240 000 – 300 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Combinaison Y-DNA + mtDNA</td>
+                <td class="td-en">Y-DNA + mtDNA Dual Lineage Test</td>
+                <td class="td-price">
+                  <span class="price-badge premium">350 000 – 450 000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CAT 4 – FAMILLE AVANCEE -->
+      <section class="tarif-category" id="cat4">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-purple">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 04</p>
+            <h2 class="tarif-category-title">
+              Tests de Recherche Familiale Avancee
+            </h2>
+            <p class="tarif-category-sub">Advanced Family Finder Tests</p>
+          </div>
+        </div>
+        <div class="tarif-table-wrap">
+          <table class="tarif-table">
+            <thead>
+              <tr>
+                <th>Test (FR)</th>
+                <th>Test (EN)</th>
+                <th>Tarif (FCFA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-fr">Recherche de parents proches</td>
+                <td class="td-en">Close Family Finder Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">260 000 – 350 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Recherche avancee de parents eloignes</td>
+                <td class="td-en">Extended Family Finder Test</td>
+                <td class="td-price">
+                  <span class="price-badge premium">300 000 – 420 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Compatibilite biologique pour immigration</td>
+                <td class="td-en">Immigration DNA Test</td>
+                <td class="td-price">
+                  <span class="price-badge premium">320 000 – 450 000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CAT 5 – MEDICO-GENETIQUE -->
+      <section class="tarif-category" id="cat5">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-teal">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 05</p>
+            <h2 class="tarif-category-title">Tests ADN Medico-Genetiques</h2>
+            <p class="tarif-category-sub">
+              Health Genetic Tests (non diagnostiques)
+            </p>
+          </div>
+          <span class="tarif-optional-badge">
+            <svg
+              width="12"
+              height="12"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            En partenariat
+          </span>
+        </div>
+        <div class="tarif-table-wrap">
+          <table class="tarif-table">
+            <thead>
+              <tr>
+                <th>Test (FR)</th>
+                <th>Test (EN)</th>
+                <th>Tarif (FCFA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-fr">Predisposition genetique sante</td>
+                <td class="td-en">Health Predisposition DNA Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">220 000 – 350 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">
+                  Pharmacogenetique (reaction aux medicaments)
+                </td>
+                <td class="td-en">Pharmacogenetics Test</td>
+                <td class="td-price">
+                  <span class="price-badge premium">350 000 – 500 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Intolerances et allergies genetiques</td>
+                <td class="td-en">Genetic Sensitivity Test</td>
+                <td class="td-price">
+                  <span class="price-badge">180 000 – 260 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Predisposition sportive</td>
+                <td class="td-en">Athletic Performance DNA Test</td>
+                <td class="td-price">
+                  <span class="price-badge">150 000 – 230 000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CAT 6 – PRENATAL -->
+      <section class="tarif-category" id="cat6">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-pink">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 06</p>
+            <h2 class="tarif-category-title">Tests ADN Prenataux</h2>
+            <p class="tarif-category-sub">
+              Prenatal DNA Tests (hautement specialises)
+            </p>
+          </div>
+        </div>
+        <div class="tarif-table-wrap">
+          <table class="tarif-table">
+            <thead>
+              <tr>
+                <th>Test (FR)</th>
+                <th>Test (EN)</th>
+                <th>Tarif (FCFA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-fr">
+                  Test de paternite prenatal non-invasif (NIPP)
+                </td>
+                <td class="td-en">Non-invasive Prenatal Paternity Test</td>
+                <td class="td-price">
+                  <span class="price-badge premium">750 000 – 1 300 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Test NIPT anomalies chromosomiques</td>
+                <td class="td-en">NIPT Chromosomal Screening</td>
+                <td class="td-price">
+                  <span class="price-badge high">180 000 – 260 000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CAT 7 – MEDICO-LEGAL -->
+      <section class="tarif-category" id="cat7">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-red">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 07</p>
+            <h2 class="tarif-category-title">
+              Tests ADN Medico-Legaux / Forensic
+            </h2>
+            <p class="tarif-category-sub">Forensic DNA Tests</p>
+          </div>
+        </div>
+        <div class="tarif-table-wrap">
+          <table class="tarif-table">
+            <thead>
+              <tr>
+                <th>Test (FR)</th>
+                <th>Test (EN)</th>
+                <th>Tarif (FCFA)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-fr">
+                  ADN sur objets (brosse a dents, cheveux...)
+                </td>
+                <td class="td-en">Forensic DNA Extraction</td>
+                <td class="td-price">
+                  <span class="price-badge high">200 000 – 350 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">ADN sur scene (tache, textile...)</td>
+                <td class="td-en">Forensic Evidence DNA Test</td>
+                <td class="td-price">
+                  <span class="price-badge high">220 000 – 380 000</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="td-fr">Determination du sexe ADN</td>
+                <td class="td-en">DNA Gender Determination</td>
+                <td class="td-price">
+                  <span class="price-badge">120 000 – 180 000</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CAT 8 – SERVICES COMPLEMENTAIRES -->
+      <section class="tarif-category" id="cat8">
+        <div class="tarif-category-header">
+          <div class="tarif-category-icon icon-dark">
+            <svg
+              width="26"
+              height="26"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path d="M19.07 4.93a10 10 0 1 1-14.14 0" />
+              <path d="M12 1v3" />
+            </svg>
+          </div>
+          <div class="tarif-category-meta">
+            <p class="tarif-category-num">Categorie 08</p>
+            <h2 class="tarif-category-title">Services Complementaires</h2>
+            <p class="tarif-category-sub">Additional Services</p>
+          </div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-card-label"
+              >Expedition express internationale d'echantillon</span
+            >
+            <span class="service-card-price">30 000 – 55 000 FCFA</span>
+          </div>
+          <div class="service-card">
+            <span class="service-card-label"
+              >Interpretation professionnelle du rapport</span
+            >
+            <span class="service-card-price">30 000 – 50 000 FCFA</span>
+          </div>
+          <div class="service-card">
+            <span class="service-card-label"
+              >Consultation genetique (avec partenaire)</span
+            >
+            <span class="service-card-price">35 000 – 60 000 FCFA</span>
+          </div>
+          <div class="service-card">
+            <span class="service-card-label">Certificat imprime scelle</span>
+            <span class="service-card-price">10 000 – 20 000 FCFA</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <h2 class="cta-title">Prêt a commander votre test ?</h2>
+        <p class="cta-desc">
+          Contactez notre equipe pour un devis personnalisé ou pour commencer
+          votre démarche en toute confidentialité.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="hero-button">Nous contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-header">
+        <div>
+          <img
+            src="assets/logo.png"
+            width="190"
+            height="39"
+            alt="Genlab Africa"
+          />
+          <p>
+            Solutions fiables pour la collecte, l’analyse et la gestion des
+            prélèvements ADN en toute sécurité.
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tests.html">Nos tests</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#nos-tests">Nos tests</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: info@genlab-africa.com</p>
+          <p>Téléphone: +225 07 07 55 34 83</p>
+        </div>
+      </div>
+      <hr width="100%" style="border: 1px solid #fff" />
+      <p>&copy; 2025 Genlab Africa. Tous droits réservés.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+
+    <script>
+      // Mobile nav
+      const toggle = document.getElementById("navToggle");
+      const nav = document.getElementById("mainNav");
+      toggle.addEventListener("click", () => {
+        const open = toggle.classList.toggle("is-open");
+        nav.classList.toggle("nav-open", open);
+        toggle.setAttribute("aria-expanded", open);
+        toggle.querySelector(".nav-toggle-icon-menu").style.display = open
+          ? "none"
+          : "";
+        toggle.querySelector(".nav-toggle-icon-close").style.display = open
+          ? ""
+          : "none";
+      });
+
+      // Sticky nav scroll highlight
+      const navBtns = document.querySelectorAll(".tarif-nav-btn");
+      const sections = document.querySelectorAll(".tarif-category");
+
+      navBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const target = document.getElementById(btn.dataset.target);
+          if (target) target.scrollIntoView({ behavior: "smooth" });
+          navBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+
+      // Intersection observer for active state
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              navBtns.forEach((b) => {
+                b.classList.toggle("active", b.dataset.target === id);
+              });
+            }
+          });
+        },
+        { rootMargin: "-20% 0px -70% 0px" },
+      );
+
+      sections.forEach((s) => observer.observe(s));
+    </script>
+  </body>
 </html>

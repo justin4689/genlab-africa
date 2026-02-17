@@ -1,12 +1,1027 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tests</title>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Tests ADN – GenLab Africa</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tests.css" />
-</head>
-<body>
-    
-</body>
+    <link rel="icon" href="/assets/icon.png" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div
+      class="hero-container"
+      style="
+        min-height: unset;
+        padding-bottom: 0;
+        background: linear-gradient(to bottom, #fff, rgba(10, 156, 10, 0.08));
+      "
+    >
+      <header class="header">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="GenLab Africa" class="logo" />
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-icon nav-toggle-icon-menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </span>
+          <span
+            class="nav-toggle-icon nav-toggle-icon-close"
+            style="display: none"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </span>
+        </button>
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a href="tests.html" class="nav-link">Nos tests</a>
+            </li>
+            <li class="nav-item">
+              <a href="tarifs.html" class="nav-link">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a href="apropos.html" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" data-aos="fade-down">
+      <div class="page-hero-inner">
+        <p class="page-hero-tag">Laboratoire certifié</p>
+        <h1 class="page-hero-title">Nos Tests ADN</h1>
+        <p class="page-hero-desc">
+          GenLab Africa propose une gamme complete d'analyses genetiques
+          realisees dans un laboratoire accredite, avec des resultats fiables,
+          confidentiels et livres rapidement.
+        </p>
+        <div class="page-hero-stats">
+          <div class="stat">
+            <span class="stat-num">99,9%</span
+            ><span class="stat-label">Precision</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">+20</span
+            ><span class="stat-label">Types de tests</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5-10</span
+            ><span class="stat-label">Jours ouvres</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="filter-bar-section">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">
+          Tous les tests
+        </button>
+        <button class="filter-btn" data-filter="filiation">Filiation</button>
+        <button class="filter-btn" data-filter="ancestralite">
+          Ancestralité
+        </button>
+        <button class="filter-btn" data-filter="sante">Santé</button>
+        <button class="filter-btn" data-filter="identite">Identité</button>
+        <button class="filter-btn" data-filter="judiciaire">
+          Judiciaire / Legal
+        </button>
+      </div>
+    </section>
+
+    <!-- CATALOGUE -->
+    <main class="catalogue">
+      <!-- ==== FILIATION ==== -->
+      <div class="catalogue-section" id="filiation">
+        <div class="catalogue-section-header">
+          <span class="section-tag filiation-tag">Filiation</span>
+          <h2 class="catalogue-section-title">Tests de Filiation</h2>
+          <p class="catalogue-section-desc">
+            Etablissez avec certitude les liens biologiques entre individus
+            grace a nos analyses genetiques haute precision.
+          </p>
+        </div>
+        <div class="tests-catalogue-grid" data-aos="zoom-in">
+          <article class="test-card">
+            <div class="test-card-header filiation-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  <path d="M21 21v-2a4 4 0 0 0-3-3.85" />
+                </svg>
+              </div>
+              <span class="test-card-badge">Populaire</span>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Test de Paternité</h3>
+              <p class="test-card-desc">
+                Determine si un homme est le pere biologique d'un enfant.
+                Analyse de plus de 20 marqueurs genetiques pour une fiabilite de
+                99,99%.
+              </p>
+              <ul class="test-card-features">
+                <li>Resultats en 5-7 jours ouvres</li>
+                <li>Prelevement buccal indolore</li>
+                <li>Rapport certifie signe</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header filiation-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Test de Maternité</h3>
+              <p class="test-card-desc">
+                Confirme le lien biologique entre une mere et son enfant. Utile
+                lors de demarches d'adoption ou de litiges d'identite.
+              </p>
+              <ul class="test-card-features">
+                <li>Resultats en 5-7 jours ouvres</li>
+                <li>Prelevement non invasif</li>
+                <li>Rapport certifie</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header filiation-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Test de Fraternité</h3>
+              <p class="test-card-desc">
+                Determine si deux personnes sont demi-freres/soeurs ou
+                freres/soeurs a part entiere partageant les deux memes parents
+                biologiques.
+              </p>
+              <ul class="test-card-features">
+                <li>Resultats en 7-10 jours ouvres</li>
+                <li>Analyse chromosomique approfondie</li>
+                <li>Rapport detaille</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header filiation-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">
+                Test Grands-Parents / Petits-Enfants
+              </h3>
+              <p class="test-card-desc">
+                Etablit le lien biologique entre grands-parents et
+                petits-enfants, souvent utilise en l'absence du pere ou de la
+                mere pour les procedures d'immigration.
+              </p>
+              <ul class="test-card-features">
+                <li>Resultats en 7-10 jours ouvres</li>
+                <li>Admis par les autorites consulaires</li>
+                <li>Rapport officiel disponible</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header filiation-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Test Oncle/Tante - Neveu/Niece</h3>
+              <p class="test-card-desc">
+                Analyse la relation biologique entre un oncle ou une tante et un
+                neveu ou une niece quand les parents ne sont pas disponibles
+                pour le test.
+              </p>
+              <ul class="test-card-features">
+                <li>Resultats en 7-10 jours ouvres</li>
+                <li>Marqueurs hautement discriminants</li>
+                <li>Rapport certifie</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header filiation-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Test ADN Chromosome Y</h3>
+              <p class="test-card-desc">
+                Trace la lignee paternelle sur plusieurs generations. Confirme
+                si deux hommes partagent un ancetre paternel commun.
+              </p>
+              <ul class="test-card-features">
+                <li>Resultats en 7-10 jours ouvres</li>
+                <li>Lignee directe pere-fils</li>
+                <li>Analyse multigenerationnelle</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ==== ANCESTRALITE ==== -->
+      <div class="catalogue-section" id="ancestralite" data-aos="zoom-in">
+        <div class="catalogue-section-header">
+          <span class="section-tag ancestralite-tag">Ancestralité</span>
+          <h2 class="catalogue-section-title">Tests d'Ancestralité</h2>
+          <p class="catalogue-section-desc">
+            Decouvrez vos origines ethniques et geographiques grace a une
+            analyse comparative avec des bases de donnees africaines et
+            mondiales.
+          </p>
+        </div>
+        <div class="tests-catalogue-grid">
+          <article class="test-card">
+            <div class="test-card-header ancestralite-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </div>
+              <span class="test-card-badge" style="background: #e67e22"
+                >Nouveau</span
+              >
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Composition Ethnique Africaine</h3>
+              <p class="test-card-desc">
+                Identifie votre pourcentage d'appartenance aux grands groupes
+                ethniques africains : Bantou, Yoruba, Akan, Mande, Peul,
+                Nilotique, etc.
+              </p>
+              <ul class="test-card-features">
+                <li>Plus de 50 groupes ethniques africains</li>
+                <li>Carte geographique de vos origines</li>
+                <li>Rapport complet avec infographies</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header ancestralite-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />
+                  <path d="M13 13l6 6" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Origines Mondiales (Autosomal)</h3>
+              <p class="test-card-desc">
+                Analyse votre ADN autosomique pour estimer votre mix genetique
+                mondial : Afrique, Europe, Asie, Ameriques, Moyen-Orient et plus
+                encore.
+              </p>
+              <ul class="test-card-features">
+                <li>Couverture mondiale complete</li>
+                <li>Resultats en pourcentages detailles</li>
+                <li>Visualisation interactive</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header ancestralite-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">
+                Lignee Maternelle (ADN Mitochondrial)
+              </h3>
+              <p class="test-card-desc">
+                Retrace votre lignee maternelle depuis l'Eve mitochondriale.
+                Decouvrez votre haplo-groupe maternel et les migrations de vos
+                ancetres.
+              </p>
+              <ul class="test-card-features">
+                <li>Analyse complete de l'ADNmt</li>
+                <li>Haplo-groupe et carte des migrations</li>
+                <li>Histoire narrative de votre lignee</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header ancestralite-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Lignee Paternelle (Chromosome Y)</h3>
+              <p class="test-card-desc">
+                Determine votre haplo-groupe paternel et retrace les migrations
+                de votre lignee paternelle depuis Adam chromosomique jusqu'a
+                aujourd'hui.
+              </p>
+              <ul class="test-card-features">
+                <li>Uniquement pour les hommes</li>
+                <li>Haplo-groupe et arbre phylogenetique</li>
+                <li>Carte des migrations paternelles</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ==== SANTE ==== -->
+      <div class="catalogue-section" id="sante" data-aos="zoom-in">
+        <div class="catalogue-section-header">
+          <span class="section-tag sante-tag">Sante</span>
+          <h2 class="catalogue-section-title">Tests Genetiques de Sante</h2>
+          <p class="catalogue-section-desc">
+            Identifiez vos predispositions genetiques pour prendre des decisions
+            eclairees sur votre sante, en concertation avec votre medecin.
+          </p>
+        </div>
+        <div class="tests-catalogue-grid">
+          <article class="test-card">
+            <div class="test-card-header sante-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Depistage Porteur Drepanocytose</h3>
+              <p class="test-card-desc">
+                Detecte si vous etes porteur sain ou atteint de la drepanocytose
+                (HbSS, HbSC, HbS), maladie genetique tres repandue en Afrique.
+              </p>
+              <ul class="test-card-features">
+                <li>Analyse des genes HBB</li>
+                <li>Conseil genetique inclus</li>
+                <li>Resultats en 5-7 jours</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header sante-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Maladies Cardiovasculaires</h3>
+              <p class="test-card-desc">
+                Analyse les variantes genetiques associees aux risques
+                d'hypertension, d'AVC et de maladies coronariennes pour une
+                prevention personnalisee.
+              </p>
+              <ul class="test-card-features">
+                <li>Panel de marqueurs cardiovasculaires</li>
+                <li>Rapport de risque relatif</li>
+                <li>Recommandations preventives</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header sante-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="3" />
+                  <path
+                    d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">
+                Predispositions au Diabete de Type 2
+              </h3>
+              <p class="test-card-desc">
+                Identifie les variants genetiques associes au risque de
+                developper un diabete de type 2 pour adapter votre mode de vie
+                en amont.
+              </p>
+              <ul class="test-card-features">
+                <li>Genes TCF7L2, KCNJ11, PPARG</li>
+                <li>Score de risque polygenetique</li>
+                <li>Conseils nutritionnels personnalises</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header sante-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Pharmacogenomique</h3>
+              <p class="test-card-desc">
+                Analyse comment vos genes influencent votre reponse aux
+                medicaments : metabolisme, efficacite, risques d'effets
+                indesirables.
+              </p>
+              <ul class="test-card-features">
+                <li>Panel de genes CYP450 et autres</li>
+                <li>Adapte aux medicaments courants</li>
+                <li>Rapport destine a votre medecin</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header sante-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="12" y1="18" x2="12" y2="12" />
+                  <line x1="9" y1="15" x2="15" y2="15" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">
+                Depistage Prenatal Non Invasif (DPNI)
+              </h3>
+              <p class="test-card-desc">
+                Analyse l'ADN foetal libre dans le sang maternel pour detecter
+                les trisomies 21, 18, 13 et anomalies chromosomiques des la 10e
+                semaine.
+              </p>
+              <ul class="test-card-features">
+                <li>Simple prise de sang maternelle</li>
+                <li>Aucun risque pour le foetus</li>
+                <li>Resultats en 7-10 jours</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header sante-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                  <polyline points="17 6 23 6 23 12" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Nutrition et Fitness Genetique</h3>
+              <p class="test-card-desc">
+                Analyse vos predispositions genetiques liees au metabolisme, a
+                l'intolerance au lactose, a la sensibilite au gluten et a vos
+                aptitudes sportives.
+              </p>
+              <ul class="test-card-features">
+                <li>Profil nutritionnel personnalise</li>
+                <li>Programme fitness adapte a votre ADN</li>
+                <li>Rapport detaille en francais</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ==== IDENTITE ==== -->
+      <div class="catalogue-section" id="identite" data-aos="zoom-in">
+        <div class="catalogue-section-header">
+          <span class="section-tag identite-tag">Identite</span>
+          <h2 class="catalogue-section-title">Tests d'Identification</h2>
+          <p class="catalogue-section-desc">
+            Des solutions fiables pour l'identification individuelle dans les
+            contextes civils, administratifs ou humanitaires.
+          </p>
+        </div>
+        <div class="tests-catalogue-grid">
+          <article class="test-card">
+            <div class="test-card-header identite-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Profil ADN Personnel</h3>
+              <p class="test-card-desc">
+                Cree un profil genetique unique (empreinte ADN) pour une
+                personne, conserve dans notre registre securise comme piece
+                d'identite biologique.
+              </p>
+              <ul class="test-card-features">
+                <li>Stockage securise 25 ans</li>
+                <li>Certificat d'identite genetique</li>
+                <li>Accessible a la demande</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header identite-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">
+                Identification Personnes Disparues
+              </h3>
+              <p class="test-card-desc">
+                Aide a identifier des individus disparus par comparaison d'ADN
+                avec des proches biologiques, en collaboration avec les
+                autorites competentes.
+              </p>
+              <ul class="test-card-features">
+                <li>Coordination avec les familles</li>
+                <li>Protocole humanitaire certifie</li>
+                <li>Rapport officiel transmissible</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header identite-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">ADN pour Immigration et Visa</h3>
+              <p class="test-card-desc">
+                Test de filiation reconnu par les ambassades et services
+                d'immigration pour prouver une relation familiale dans une
+                demande de regroupement familial.
+              </p>
+              <ul class="test-card-features">
+                <li>Accredite AABB / ISO 17025</li>
+                <li>Rapport transmis aux ambassades</li>
+                <li>Chaine de tracabilite garantie</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ==== JUDICIAIRE ==== -->
+      <div class="catalogue-section" id="judiciaire" data-aos="zoom-in">
+        <div class="catalogue-section-header">
+          <span class="section-tag judiciaire-tag">Judiciaire / Legal</span>
+          <h2 class="catalogue-section-title">Tests Judiciaires et Legaux</h2>
+          <p class="catalogue-section-desc">
+            Des analyses ADN recevables en justice, realisees selon des
+            protocoles stricts de tracabilite et de chaine de conservation.
+          </p>
+        </div>
+        <div class="tests-catalogue-grid">
+          <article class="test-card">
+            <div class="test-card-header judiciaire-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+              </div>
+              <span class="test-card-badge" style="background: #e74c3c"
+                >Legal</span
+              >
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Test de Paternite Legal</h3>
+              <p class="test-card-desc">
+                Version legale du test de paternite avec chaine de tracabilite
+                complete, verification d'identite et protocole de prelevement
+                notarie ou medical.
+              </p>
+              <ul class="test-card-features">
+                <li>Protocole chaine de custody</li>
+                <li>Recevable devant les tribunaux</li>
+                <li>Notaire ou medecin agree requis</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header judiciaire-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">
+                Analyse Traces ADN (Medecine Legale)
+              </h3>
+              <p class="test-card-desc">
+                Analyse et identification d'ADN sur des traces biologiques
+                (sang, cheveux, salive) collectees sur une scene, dans le cadre
+                d'enquetes judiciaires.
+              </p>
+              <ul class="test-card-features">
+                <li>Protocole forensique certifie</li>
+                <li>Rapport expert transmissible</li>
+                <li>Intervention sur requisition</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+
+          <article class="test-card">
+            <div class="test-card-header judiciaire-bg">
+              <div class="test-card-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <polyline points="9 12 11 14 15 10" />
+                </svg>
+              </div>
+            </div>
+            <div class="test-card-body">
+              <h3 class="test-card-title">Filiation Legale pour Succession</h3>
+              <p class="test-card-desc">
+                Etablit legalement le lien biologique entre un heritier et un
+                defunt dans le cadre d'une procedure de succession ou d'un
+                litige patrimonial.
+              </p>
+              <ul class="test-card-features">
+                <li>Coordination avec notaires et avocats</li>
+                <li>Rapport opposable en justice</li>
+                <li>Archivage securise 30 ans</li>
+              </ul>
+              <a href="#contact" class="test-card-btn">Demander ce test</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- CTA -->
+    <section class="cta-section" id="contact">
+      <div class="cta-inner">
+        <h2 class="cta-title">Besoin d'un test specifique ?</h2>
+        <p class="cta-desc">
+          Notre equipe d'experts genetiques est disponible pour vous guider vers
+          l'analyse la plus adaptee a votre situation, en toute confidentialite.
+        </p>
+        <div class="cta-buttons">
+          <a href="mailto:contact@genlabafricagenlab.com" class="hero-button"
+            >Nous contacter</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-header">
+        <div>
+          <img
+            src="assets/logo.png"
+            width="190"
+            height="39"
+            alt="Genlab Africa"
+          />
+          <p>
+            Solutions fiables pour la collecte, l’analyse et la gestion des
+            prélèvements ADN en toute sécurité.
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tests.html">Nos tests</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#nos-tests">Nos tests</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: info@genlab-africa.com</p>
+          <p>Téléphone: +225 07 07 55 34 83</p>
+          <p>
+            <a
+              href="https://www.facebook.com/genlabafricagenlab"
+              target="_blank"
+            >
+              <i class="lab la-facebook"></i>
+            </a>
+            <a href="https://wa.me/2250707553483" target="_blank">
+              <i class="lab la-whatsapp"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <hr width="100%" style="border: 1px solid #fff" />
+      <p>&copy; 2025 Genlab Africa. Tous droits réservés.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+
+    <script>
+      const toggle = document.getElementById("navToggle");
+      const nav = document.getElementById("mainNav");
+      toggle.addEventListener("click", () => {
+        const open = toggle.classList.toggle("is-open");
+        nav.classList.toggle("nav-open", open);
+        toggle.setAttribute("aria-expanded", open);
+      });
+
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const sections = document.querySelectorAll(".catalogue-section");
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          const filter = btn.dataset.filter;
+          sections.forEach((s) => {
+            s.style.display = filter === "all" || s.id === filter ? "" : "none";
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -1,12 +1,851 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – GenLab Africa</title>
+    <link rel="icon" href="/assets/icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div
+      class="hero-container"
+      style="
+        min-height: unset;
+        padding-bottom: 0;
+        background: linear-gradient(to bottom, #fff, rgba(10, 156, 10, 0.08));
+      "
+    >
+      <header class="header">
+        <a href="index.html"
+          ><img src=" assets/logo.png" alt="GenLab Africa" class="logo"
+        /></a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-icon nav-toggle-icon-menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </span>
+          <span
+            class="nav-toggle-icon nav-toggle-icon-close"
+            style="display: none"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </span>
+        </button>
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a href="tests.html" class="nav-link">Nos tests</a>
+            </li>
+            <li class="nav-item">
+              <a href="tarifs.html" class="nav-link">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a href="apropos.html" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <p class="page-hero-tag">Reponse sous 24h</p>
+        <h1 class="page-hero-title">Contactez-nous</h1>
+        <p class="page-hero-desc">
+          Notre equipe d'experts est disponible pour repondre a toutes vos
+          questions, en toute confidentialite et sans engagement.
+        </p>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="contact-main">
+      <!-- LEFT: FORM -->
+      <section class="contact-form-section">
+        <p class="section-eyebrow">Formulaire de contact</p>
+        <h2 class="section-title-lg">Envoyez-nous un message</h2>
+        <p class="section-desc">
+          Remplissez le formulaire ci-dessous et notre equipe vous contactera
+          dans les meilleurs delais. Toutes les informations sont traitees de
+          facon strictement confidentielle.
+        </p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="prenom"
+                >Prenom <span>*</span></label
+              >
+              <input
+                class="form-input"
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="Votre prenom"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="nom">Nom <span>*</span></label>
+              <input
+                class="form-input"
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email <span>*</span></label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="votre@email.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telephone">Telephone</label>
+              <input
+                class="form-input"
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="+225 00 00 00 00 00"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="pays"
+              >Pays de residence <span>*</span></label
+            >
+            <select class="form-select" id="pays" name="pays" required>
+              <option value="" disabled selected>
+                Selectionnez votre pays
+              </option>
+              <option>Senegal</option>
+              <option>Cote d'Ivoire</option>
+              <option>Cameroun</option>
+              <option>Mali</option>
+              <option>Burkina Faso</option>
+              <option>Ghana</option>
+              <option>Nigeria</option>
+              <option>Congo (RDC)</option>
+              <option>Gabon</option>
+              <option>Togo</option>
+              <option>Benin</option>
+              <option>Niger</option>
+              <option>Tchad</option>
+              <option>Guinee</option>
+              <option>Madagascar</option>
+              <option>Maroc</option>
+              <option>Algerie</option>
+              <option>Tunisie</option>
+              <option>France</option>
+              <option>Belgique</option>
+              <option>Canada</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"
+              >Type de test souhaite <span>*</span></label
+            >
+            <select class="form-select" id="typeTest" name="typeTest" required>
+              <option value="" disabled selected>
+                Selectionnez un type de test
+              </option>
+              <optgroup label="Tests de Parente">
+                <option>Test de paternite (simple)</option>
+                <option>Test de paternite legal</option>
+                <option>Test de maternite</option>
+                <option>Test de fraternite</option>
+                <option>Test grands-parents</option>
+                <option>Test oncle/tante</option>
+                <option>Reconstruction familiale</option>
+              </optgroup>
+              <optgroup label="Tests Genealogiques">
+                <option>Origines genetiques completes</option>
+                <option>Origines africaines detaillees</option>
+                <option>Chromosome Y (lignee paternelle)</option>
+                <option>ADN mitochondrial (lignee maternelle)</option>
+              </optgroup>
+              <optgroup label="Immigration / Legal">
+                <option>Test ADN pour immigration</option>
+                <option>Test de paternite legal (admissible en justice)</option>
+                <option>Analyse traces ADN (forensique)</option>
+              </optgroup>
+              <optgroup label="Prenatal">
+                <option>Test paternite prenatal (NIPP)</option>
+                <option>NIPT anomalies chromosomiques</option>
+              </optgroup>
+              <optgroup label="Sante Genetique">
+                <option>Predisposition genetique sante</option>
+                <option>Pharmacogenetique</option>
+                <option>Intolerances genetiques</option>
+              </optgroup>
+              <option>Autre / Je ne sais pas encore</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Urgence de votre demande</label>
+            <div class="radio-group" id="urgenceGroup">
+              <label class="radio-option" data-group="urgence">
+                <input type="radio" name="urgence" value="standard" />
+                <span class="radio-dot"></span>
+                Standard (5-10 jours)
+              </label>
+              <label class="radio-option" data-group="urgence">
+                <input type="radio" name="urgence" value="urgent" />
+                <span class="radio-dot"></span>
+                Urgent (2-4 jours)
+              </label>
+              <label class="radio-option" data-group="urgence">
+                <input type="radio" name="urgence" value="tres-urgent" />
+                <span class="radio-dot"></span>
+                Tres urgent (48h)
+              </label>
+              <label class="radio-option" data-group="urgence">
+                <input type="radio" name="urgence" value="pas-sur" />
+                <span class="radio-dot"></span>
+                Je ne sais pas
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message"
+              >Votre message <span>*</span></label
+            >
+            <textarea
+              class="form-textarea"
+              id="message"
+              name="message"
+              placeholder="Decrivez brievement votre situation ou posez vos questions. Toutes les informations sont confidentielles."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-option" id="consentLabel">
+              <input type="checkbox" id="consent" name="consent" />
+              <span class="checkbox-box"></span>
+              J'accepte que mes donnees soient utilisees uniquement pour traiter
+              ma demande et qu'elles soient traitees de facon strictement
+              confidentielle conformement a notre politique de confidentialite.
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit-btn">
+            <svg
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Envoyer ma demande
+          </button>
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">
+            <svg
+              width="30"
+              height="30"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </div>
+          <h3>Message envoye avec succes !</h3>
+          <p>
+            Merci pour votre message. Notre equipe vous repondra dans les 24
+            heures ouvrables. Un email de confirmation vous a ete envoye.
+          </p>
+        </div>
+      </section>
+
+      <!-- RIGHT: INFO -->
+      <aside class="contact-info-section">
+        <!-- CONTACT DETAILS -->
+        <div class="contact-info-card">
+          <h3>
+            <span class="card-icon">
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9A16 16 0 0 0 15 15.91l.27-.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+            </span>
+            Informations de contact
+          </h3>
+
+          <div class="info-item">
+            <span class="info-item-dot"></span>
+            <div>
+              <p class="info-item-label">Telephone / WhatsApp</p>
+              <p class="info-item-value">
+                <a href="tel:+221000000000">+225 07 07 55 34 83</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-item-dot"></span>
+            <div>
+              <p class="info-item-label">Email</p>
+              <p class="info-item-value">
+                <a href="mailto:contact@genlabafricagenlab.com"
+                  >contact@genlabafricagenlab.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-item-dot"></span>
+            <div>
+              <p class="info-item-label">Adresse</p>
+              <p class="info-item-value">
+                Abidjan, Côte d'Ivoire<br />Afrique de l'Ouest
+              </p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-item-dot"></span>
+            <div>
+              <p class="info-item-label">Delai de reponse</p>
+              <p class="info-item-value">Sous 24h ouvrables</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOURS -->
+        <div class="contact-info-card">
+          <h3>
+            <span class="card-icon">
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </span>
+            Horaires d'ouverture
+          </h3>
+          <table class="hours-table">
+            <tr>
+              <td class="day">Lundi – Vendredi</td>
+              <td class="hours">08h00 – 18h00</td>
+            </tr>
+            <tr>
+              <td class="day">Samedi</td>
+              <td class="hours">09h00 – 14h00</td>
+            </tr>
+            <tr>
+              <td class="day">Dimanche</td>
+              <td class="hours closed">Ferme</td>
+            </tr>
+            <tr>
+              <td class="day">Jours feries</td>
+              <td class="hours closed">Ferme</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- PROCESS -->
+        <div class="contact-info-card">
+          <h3>
+            <span class="card-icon">
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polyline points="9 11 12 14 22 4" />
+                <path
+                  d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                />
+              </svg>
+            </span>
+            Comment ca marche
+          </h3>
+          <div class="info-item">
+            <div
+              style="
+                width: 24px;
+                height: 24px;
+                background: #0e79ec;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 11px;
+                font-weight: 700;
+                flex-shrink: 0;
+              "
+            >
+              1
+            </div>
+            <div>
+              <p class="info-item-label">Vous nous contactez</p>
+              <p class="info-item-value">
+                Via ce formulaire, par email ou WhatsApp
+              </p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div
+              style="
+                width: 24px;
+                height: 24px;
+                background: #0e79ec;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 11px;
+                font-weight: 700;
+                flex-shrink: 0;
+              "
+            >
+              2
+            </div>
+            <div>
+              <p class="info-item-label">Nous vous guidons</p>
+              <p class="info-item-value">
+                Devis, instructions de prelevement, envoi du kit
+              </p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div
+              style="
+                width: 24px;
+                height: 24px;
+                background: #0e79ec;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 11px;
+                font-weight: 700;
+                flex-shrink: 0;
+              "
+            >
+              3
+            </div>
+            <div>
+              <p class="info-item-label">Analyse en laboratoire</p>
+              <p class="info-item-value">
+                Traitement certifie sous 5 a 10 jours ouvres
+              </p>
+            </div>
+          </div>
+          <div class="info-item" style="margin-bottom: 0">
+            <div
+              style="
+                width: 24px;
+                height: 24px;
+                background: #0a9c0a;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 11px;
+                font-weight: 700;
+                flex-shrink: 0;
+              "
+            >
+              4
+            </div>
+            <div>
+              <p class="info-item-label">Rapport certifie</p>
+              <p class="info-item-value">
+                Envoye par email et/ou courrier scelle
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONFIDENTIALITY -->
+        <div class="confidentiality-box">
+          <h4>
+            <svg
+              width="18"
+              height="18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            Confidentialite garantie
+          </h4>
+          <p>
+            Toutes vos informations personnelles et resultats de tests sont
+            proteges par notre politique de confidentialite stricte. Aucune
+            donnee n'est partagee avec des tiers sans votre consentement
+            explicite.
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <p class="section-eyebrow">Questions frequentes</p>
+      <h2 class="title">Vous avez des questions ?</h2>
+      <p class="section-desc description">
+        Retrouvez les reponses aux questions les plus posees par nos clients.
+      </p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-trigger">
+            Comment se deroule le prelevement ADN ?
+            <svg
+              class="faq-chevron"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Le prelevement se fait generalement par ecouvillonnage buccal
+              (frottis a l'interieur de la joue) — simple, indolore et non
+              invasif. Nous vous envoyons un kit de prelevement complet avec
+              toutes les instructions. Des alternatives existent selon le type
+              de test (prise de sang, cheveux, etc.).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            Combien de temps faut-il pour recevoir les resultats ?
+            <svg
+              class="faq-chevron"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Les delais standard sont de 5 a 10 jours ouvres apres reception
+              des echantillons. Un service urgent (2-4 jours) et un service
+              express (48h) sont disponibles moyennant un supplement. Les
+              resultats sont transmis par email securise et/ou par courrier
+              postal scelle.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            Puis-je faire un test depuis n'importe quel pays d'Afrique ?
+            <svg
+              class="faq-chevron"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Oui. GenLab Africa est accessible depuis l'ensemble du continent
+              africain et de la diaspora. Nous gerons l'expedition
+              internationale des kits de prelevement et des echantillons. Des
+              partenariats locaux avec des cliniques et laboratoires sont
+              disponibles dans plusieurs pays pour faciliter le prelevement sur
+              place.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            Les tests sont-ils admissibles en justice ou pour l'immigration ?
+            <svg
+              class="faq-chevron"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Oui, a condition de choisir la version "legale" du test, qui
+              respecte un protocole strict de chaine de possession (chain of
+              custody), avec verification d'identite et prelevement supervise
+              par un professionnel de sante agree. Ces tests sont reconnus par
+              les ambassades, tribunaux et services d'immigration pour les
+              demarches de regroupement familial.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            Comment sont proteges mes donnees et resultats ?
+            <svg
+              class="faq-chevron"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Vos donnees genetiques et vos resultats sont proteges par un
+              chiffrement de bout en bout. Seul vous (et les personnes que vous
+              designez) avez acces aux resultats. Nous ne vendons, ne partageons
+              ni n'utilisons vos donnees a des fins commerciales ou de recherche
+              sans consentement explicite. Les echantillons sont detruits apres
+              analyse selon nos protocoles.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger">
+            Puis-je faire un test sans que l'autre personne le sache ?
+            <svg
+              class="faq-chevron"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              viewBox="0 0 24 24"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Pour les tests a usage personnel (non legal), nous proposons des
+              tests sur traces ADN (cheveux, objets...) sans necessite de
+              consentement de la personne concernee — cela reste a votre
+              discernement et dans le cadre de la legalite de votre pays. En
+              revanche, pour tout usage legal ou judiciaire, le consentement de
+              toutes les parties et une supervision officielle sont
+              obligatoires.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <h2 class="cta-title">Votre premiere consultation est gratuite</h2>
+        <p class="cta-desc">
+          Parlez a un de nos conseillers et obtenez un devis personnalise adapte
+          a votre situation.
+        </p>
+        <div class="cta-buttons">
+          <a href="tarifs.html" class="hero-button">Voir les tarifs</a>
+          <a href="tests.html" class="cta-btn-outline">Explorer nos tests</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-header">
+        <div>
+          <img
+            src="assets/logo.png"
+            width="190"
+            height="39"
+            alt="Genlab Africa"
+          />
+          <p>
+            Solutions fiables pour la collecte, l’analyse et la gestion des
+            prélèvements ADN en toute sécurité.
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tests.html">Nos tests</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#nos-tests">Nos tests</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: info@genlab-africa.com</p>
+          <p>Téléphone: +225 07 07 55 34 83</p>
+          <p>
+            <a
+              href="https://www.facebook.com/genlabafricagenlab"
+              target="_blank"
+            >
+              <i class="lab la-facebook"></i>
+            </a>
+            <a href="https://wa.me/2250707553483" target="_blank">
+              <i class="lab la-whatsapp"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <hr width="100%" style="border: 1px solid #fff" />
+      <p>&copy; 2025 Genlab Africa. Tous droits réservés.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+    <script>
+      // Mobile nav
+      const toggle = document.getElementById("navToggle");
+      const nav = document.getElementById("mainNav");
+      toggle.addEventListener("click", () => {
+        const open = toggle.classList.toggle("is-open");
+        nav.classList.toggle("nav-open", open);
+        toggle.setAttribute("aria-expanded", open);
+        toggle.querySelector(".nav-toggle-icon-menu").style.display = open
+          ? "none"
+          : "";
+        toggle.querySelector(".nav-toggle-icon-close").style.display = open
+          ? ""
+          : "none";
+      });
+
+      // Radio buttons
+      document.querySelectorAll(".radio-option").forEach((opt) => {
+        opt.addEventListener("click", () => {
+          const group = opt.dataset.group;
+          document
+            .querySelectorAll(`.radio-option[data-group="${group}"]`)
+            .forEach((o) => o.classList.remove("checked"));
+          opt.classList.add("checked");
+          opt.querySelector('input[type="radio"]').checked = true;
+        });
+      });
+
+      // Checkbox
+      const consentLabel = document.getElementById("consentLabel");
+      consentLabel.addEventListener("click", () => {
+        consentLabel.classList.toggle("checked");
+        consentLabel.querySelector('input[type="checkbox"]').checked =
+          consentLabel.classList.contains("checked");
+      });
+
+      // FAQ accordion
+      document.querySelectorAll(".faq-trigger").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const item = trigger.closest(".faq-item");
+          const isOpen = item.classList.contains("open");
+          document
+            .querySelectorAll(".faq-item.open")
+            .forEach((i) => i.classList.remove("open"));
+          if (!isOpen) item.classList.add("open");
+        });
+      });
+
+      // Form submit simulation
+      document.getElementById("contactForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const form = document.getElementById("contactForm");
+        const success = document.getElementById("formSuccess");
+        form.style.display = "none";
+        success.classList.add("visible");
+        window.scrollTo({ top: success.offsetTop - 100, behavior: "smooth" });
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A propos – GenLab Africa</title>
+    <link rel="icon" href="/assets/icon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="apropos.css" />
+  </head>
+  <body>
+    <!-- ===================== HEADER ===================== -->
+    <div
+      class="hero-container"
+      style="
+        min-height: unset;
+        padding-bottom: 0;
+        background: linear-gradient(to bottom, #fff, rgba(10, 156, 10, 0.06));
+      "
+    >
+      <header class="header">
+        <a href="index.html"
+          ><img src="assets/logo.png" alt="GenLab Africa" class="logo"
+        /></a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-icon nav-toggle-icon-menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </span>
+          <span
+            class="nav-toggle-icon nav-toggle-icon-close"
+            style="display: none"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </span>
+        </button>
+        <nav class="nav" id="mainNav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a href="tests.html" class="nav-link">Nos tests</a>
+            </li>
+            <li class="nav-item">
+              <a href="tarifs.html" class="nav-link">Tarifs</a>
+            </li>
+            <li class="nav-item">
+              <a href="apropos.html" class="nav-link">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="about-hero">
+      <!-- LEFT — DARK EDITORIAL -->
+      <div class="about-hero-left">
+        <div class="hero-left-inner">
+          <div class="about-eyebrow">
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-text">Notre histoire</span>
+          </div>
+          <h1 class="about-hero-title">
+            La génétique<br />
+            <em>au service</em><br />
+            de l'Afrique
+          </h1>
+          <p class="about-hero-lead">
+            GenLab Africa est né d'une conviction simple : chaque famille
+            africaine mérite un accès équitable à des analyses génétiques
+            fiables, confidentielles et compréhensibles — sans avoir à traverser
+            des frontières ou des continents.
+          </p>
+          <div class="about-hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-num">99<span>,9%</span></span>
+              <span class="hero-stat-label">Précision garantie</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">20<span>+</span></span>
+              <span class="hero-stat-label">Pays desservis</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-num">5<span>j</span></span>
+              <span class="hero-stat-label">Délai minimum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — LIGHT VISUAL -->
+      <div class="about-hero-right">
+        <!-- DNA helix SVG decoration -->
+        <svg
+          class="dna-visual"
+          viewBox="0 0 200 400"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M60 20 C140 60, 140 100, 60 140 C-20 180, -20 220, 60 260 C140 300, 140 340, 60 380"
+            stroke="#0e79ec"
+            stroke-width="3"
+            fill="none"
+          />
+          <path
+            d="M140 20 C60 60, 60 100, 140 140 C220 180, 220 220, 140 260 C60 300, 60 340, 140 380"
+            stroke="#0a9c0a"
+            stroke-width="3"
+            fill="none"
+          />
+          <line
+            x1="60"
+            y1="20"
+            x2="140"
+            y2="20"
+            stroke="#0e79ec"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="80"
+            y1="50"
+            x2="120"
+            y2="70"
+            stroke="#0e79ec"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="100"
+            y1="80"
+            x2="100"
+            y2="120"
+            stroke="#0e79ec"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="80"
+            y1="130"
+            x2="120"
+            y2="110"
+            stroke="#0e79ec"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="60"
+            y1="140"
+            x2="140"
+            y2="140"
+            stroke="#0e79ec"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="60"
+            y1="260"
+            x2="140"
+            y2="260"
+            stroke="#0a9c0a"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="80"
+            y1="290"
+            x2="120"
+            y2="310"
+            stroke="#0a9c0a"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="100"
+            y1="320"
+            x2="100"
+            y2="360"
+            stroke="#0a9c0a"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <line
+            x1="60"
+            y1="380"
+            x2="140"
+            y2="380"
+            stroke="#0a9c0a"
+            stroke-width="2"
+            stroke-dasharray="4 4"
+          />
+          <circle cx="60" cy="20" r="5" fill="#0e79ec" />
+          <circle cx="140" cy="20" r="5" fill="#0e79ec" />
+          <circle cx="60" cy="140" r="5" fill="#0e79ec" />
+          <circle cx="140" cy="140" r="5" fill="#0e79ec" />
+          <circle cx="60" cy="260" r="5" fill="#0a9c0a" />
+          <circle cx="140" cy="260" r="5" fill="#0a9c0a" />
+          <circle cx="60" cy="380" r="5" fill="#0a9c0a" />
+          <circle cx="140" cy="380" r="5" fill="#0a9c0a" />
+        </svg>
+
+        <div class="about-hero-badge">
+          <div class="badge-icon">
+            <svg
+              width="22"
+              height="22"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <polyline points="9 12 11 14 15 10" />
+            </svg>
+          </div>
+          <h4>Laboratoire accrédité</h4>
+          <p>
+            Nos analyses respectent les normes internationales les plus strictes
+            en matière de génétique forensique et médicale.
+          </p>
+        </div>
+
+        <div class="accreditation-strip">
+          <span class="accred-tag">ISO 17025</span>
+          <span class="accred-tag">AABB</span>
+          <span class="accred-tag">99,9% Précision</span>
+          <span class="accred-tag">Confidentiel</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MISSION ===================== -->
+    <section class="mission-section">
+      <div class="mission-inner">
+        <div class="mission-left">
+          <p class="section-kicker">Notre mission</p>
+          <h2 class="mission-title">
+            Rendre la génétique accessible, fiable et africaine
+          </h2>
+          <p class="mission-body">
+            Pendant trop longtemps, les Africains devaient envoyer leurs
+            échantillons ADN en Europe ou aux États-Unis, attendant des semaines
+            pour des résultats coûteux, dans une langue étrangère et sans suivi
+            personnalisé. GenLab Africa est la réponse à ce manque.
+          </p>
+          <p class="mission-body">
+            Nous combinons une technologie de pointe, des protocoles certifies
+            internationalement et une équipe d'experts formés aux spécificités
+            génétiques africaines pour offrir un service à la fois rigoureux,
+            humain et ancré dans les réalités du continent.
+          </p>
+          <div class="mission-quote">
+            <p>
+              "L'identite biologique est un droit fondamental. Chaque personne
+              mérite de connaître ses origines, de prouver ses liens familiaux
+              et de prendre des décisions de santé éclairées — peu importe où
+              elle vit en Afrique."
+            </p>
+            <cite
+              >— Dr. Kofi Mensah, Directeur Scientifique, GenLab Africa</cite
+            >
+          </div>
+        </div>
+
+        <div class="mission-right">
+          <div class="value-card">
+            <div class="value-card-icon vc-blue">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Fiabilité absolue</h3>
+            <p>
+              Chaque analyse est effectuée en double pour garantir une précision
+              de 99,9%. Nos résultats sont incontestables.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-icon vc-green">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <h3>Confidentialité totale</h3>
+            <p>
+              Vos données génétiques ne sont jamais partagées. Chiffrement de
+              bout en bout et destruction des échantillons après analyse.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-icon vc-orange">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h3>Rapidité certifiée</h3>
+            <p>
+              Résultats en 5 à 10 jours ouvrés depuis réception de votre
+              échantillon. Service express 48h disponible.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-card-icon vc-dark">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+            </div>
+            <h3>Ancrage africain</h3>
+            <p>
+              Notre base de données génétiques inclut les spécificités
+              africaines souvent ignorées par les labos occidentaux.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STORY / TIMELINE ===================== -->
+    <section class="story-section">
+      <div class="story-inner">
+        <div class="story-header">
+          <p class="story-kicker">Notre parcours</p>
+          <h2 class="story-title">De l'idée à la référence continentale</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="timeline-tag">Fondation</span>
+              <h3>Naissance de l'idée</h3>
+              <p>
+                Frustrés par l'absence de services ADN accessibles et fiables en
+                Afrique, nos fondateurs — généticiens et entrepreneurs —
+                décident de créer GenLab Africa. La vision : démocratiser la
+                génétique sur le continent.
+              </p>
+            </div>
+            <div class="timeline-spacer">
+              <div class="timeline-dot">
+                <span class="timeline-year">2021</span>
+              </div>
+            </div>
+            <div class="timeline-empty"></div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-empty"></div>
+            <div class="timeline-spacer">
+              <div class="timeline-dot">
+                <span class="timeline-year">2022</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Infrastructure</span>
+              <h3>Mise en place du laboratoire</h3>
+              <p>
+                Installation des premiers équipements de séquençage NGS.
+                Recrutement des premiers généticiens et conseillers spécialisés.
+                Début des procédures de certification ISO 17025 et AABB.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="timeline-tag">Lancement</span>
+              <h3>Premiers tests officiels</h3>
+              <p>
+                Lancement officiel des tests de paternité et de filiation. Les
+                100 premiers dossiers sont traités avec succès. Taux de
+                satisfaction client : 97%. Premier partenariat avec une
+                ambassade pour les tests immigration.
+              </p>
+            </div>
+            <div class="timeline-spacer">
+              <div class="timeline-dot">
+                <span class="timeline-year">2023</span>
+              </div>
+            </div>
+            <div class="timeline-empty"></div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-empty"></div>
+            <div class="timeline-spacer">
+              <div class="timeline-dot">
+                <span class="timeline-year">2024</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-tag">Expansion</span>
+              <h3>Expansion panafricaine</h3>
+              <p>
+                Extension des services à 15 pays africains. Lancement des tests
+                d'ancestralité et de généalogie. Création de la plus grande base
+                de données génétiques africaines privée du continent. Obtention
+                de la certification AABB.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <span class="timeline-tag">Aujourd'hui</span>
+              <h3>Référence continentale</h3>
+              <p>
+                Plus de 20 pays desservis, plus de 5 000 dossiers traités, 8
+                catégories de tests disponibles. GenLab Africa est désormais la
+                référence en matière d'analyses ADN certifiées sur le continent
+                africain et pour la diaspora.
+              </p>
+            </div>
+            <div class="timeline-spacer">
+              <div class="timeline-dot">
+                <span class="timeline-year">2025</span>
+              </div>
+            </div>
+            <div class="timeline-empty"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT NUMBERS ===================== -->
+    <section class="impact-section">
+      <div class="impact-inner">
+        <div class="impact-header">
+          <p>GenLab Africa en chiffres</p>
+          <h2>Notre impact en quelques données</h2>
+        </div>
+        <div class="impact-grid">
+          <div class="impact-item">
+            <span class="impact-num" data-target="5000">0</span>
+            <span class="impact-label">Dossiers traités<br />avec succès</span>
+          </div>
+          <div class="impact-item">
+            <span class="impact-num" data-target="20">0<sup>+</sup></span>
+            <span class="impact-label">Pays africains<br />desservis</span>
+          </div>
+          <div class="impact-item">
+            <span class="impact-num" data-target="99">0<sup>%</sup></span>
+            <span class="impact-label">Taux de satisfaction<br />client</span>
+          </div>
+          <div class="impact-item">
+            <span class="impact-num" data-target="5">0<sup>j</sup></span>
+            <span class="impact-label">Délai minimum<br />de traitement</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TEAM ===================== -->
+    <section class="team-section">
+      <div class="team-inner">
+        <div class="team-header">
+          <p class="section-kicker">Notre équipe</p>
+          <h2 class="team-title">Des experts a votre service</h2>
+          <p class="team-desc">
+            Une équipe pluridisciplinaire de généticiens, biologistes
+            moléculaires et conseillers juridiques formés aux standards
+            internationaux.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-card-visual tc-blue">
+              <div class="team-avatar">
+                <span class="team-avatar-initials">KM</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Dr. Kofi Mensah</h3>
+              <p class="team-card-role">Directeur Scientifique</p>
+              <p class="team-card-bio">
+                Doctorat en génétique moléculaire de l'Université de Dakar. 12
+                ans d'expérience en analyses forensiques et médicales. Ancien
+                chercheur associé à l'Institut Pasteur de Dakar.
+              </p>
+              <div class="team-card-tags">
+                <span class="team-tag">Génétique forensique</span>
+                <span class="team-tag">Séquençage NGS</span>
+                <span class="team-tag">Recherche</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-visual tc-green">
+              <div class="team-avatar">
+                <span class="team-avatar-initials">AA</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Ama Acheampong</h3>
+              <p class="team-card-role">Responsable Qualité & Certification</p>
+              <p class="team-card-bio">
+                Spécialiste en biologie moléculaire et systèmes qualité ISO.
+                Pilote les processus de certification AABB et ISO 17025. Expert
+                en assurance qualité pour laboratoires médicaux.
+              </p>
+              <div class="team-card-tags">
+                <span class="team-tag">ISO 17025</span>
+                <span class="team-tag">AABB</span>
+                <span class="team-tag">Qualité Lab</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-visual tc-dark">
+              <div class="team-avatar">
+                <span class="team-avatar-initials">SB</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Me. Seydou Balde</h3>
+              <p class="team-card-role">Conseiller Juridique & Compliance</p>
+              <p class="team-card-bio">
+                Avocat specialise en droit de la famille et droit international
+                privé. Garant de la conformité légale de nos rapports pour les
+                procédures judiciaires et d'immigration.
+              </p>
+              <div class="team-card-tags">
+                <span class="team-tag">Droit de la famille</span>
+                <span class="team-tag">Immigration</span>
+                <span class="team-tag">Legal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-visual tc-blue">
+              <div class="team-avatar">
+                <span class="team-avatar-initials">FT</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Dr. Fatou Toure</h3>
+              <p class="team-card-role">Geneticienne Conseil</p>
+              <p class="team-card-bio">
+                Spécialiste en conseil génétique et interprétation de résultats.
+                Accompagne les clients dans la comprehension de leurs rapports
+                ADN avec empathie et professionnalisme.
+              </p>
+              <div class="team-card-tags">
+                <span class="team-tag">Conseil génétique</span>
+                <span class="team-tag">Ancestralité</span>
+                <span class="team-tag">Sante</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-visual tc-green">
+              <div class="team-avatar">
+                <span class="team-avatar-initials">IO</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Ibrahim Ouedraogo</h3>
+              <p class="team-card-role">Directeur des Operations</p>
+              <p class="team-card-bio">
+                Expert en logistique internationale et gestion de chaine
+                d'approvisionnement. Coordonne les operations dans 20+ pays pour
+                garantir l'intégrité des échantillons et la rapidité du service.
+              </p>
+              <div class="team-card-tags">
+                <span class="team-tag">Logistique</span>
+                <span class="team-tag">Operations</span>
+                <span class="team-tag">Chaine de custody</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-card-visual tc-dark">
+              <div class="team-avatar">
+                <span class="team-avatar-initials">MK</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-name">Dr. Marie Kone</h3>
+              <p class="team-card-role">Biologiste Moléculaire Senior</p>
+              <p class="team-card-bio">
+                Spécialiste en analyse STR et interprétation des profils
+                génétiques. 8 ans d'expérience en laboratoire d'analyses
+                forensiques. Contribue au développement de notre base de données
+                africaines.
+              </p>
+              <div class="team-card-tags">
+                <span class="team-tag">STR Analysis</span>
+                <span class="team-tag">Forensique</span>
+                <span class="team-tag">Base de données</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY AFRICA ===================== -->
+    <section class="why-section">
+      <div class="why-inner">
+        <div class="why-header">
+          <p class="section-kicker" style="justify-content: center">
+            Pourquoi GenLab Africa
+          </p>
+          <h2 class="why-title">Ce qui nous rend différents</h2>
+          <p class="why-desc">
+            Nous ne sommes pas simplement un laboratoire ADN. Nous sommes une
+            plateforme génétique construite pour et par l'Afrique.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-item-num">01</div>
+            <h3>Base de données africaine de référence</h3>
+            <p>
+              Les labos occidentaux utilisent des bases de données génétiques
+              composées à 80% de populations européennes. La nôtre intègre les
+              spécificités des 54 ethnies africaines majeures, garantissant des
+              résultats d'ancestralité et de généalogie infiniment plus précis
+              pour nos clients.
+            </p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-num">02</div>
+            <h3>Accès panafricain sans frontières</h3>
+            <p>
+              Notre système logistique couvre plus de 20 pays africains avec des
+              kits de prélèvement livrés à domicile ou en clinique partenaire.
+              Plus besoin d'envoyer vos échantillons à l'étranger. Tout se fait
+              depuis chez vous, en français ou en anglais.
+            </p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-num">03</div>
+            <h3>Rapports bilingues et compréhensibles</h3>
+            <p>
+              Nos rapports sont rédigés en français ET en anglais, avec des
+              explications claires et accessibles — pas uniquement en jargon
+              scientifique. Un conseiller génétique est disponible pour vous
+              aider à interpréter vos résultats.
+            </p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-num">04</div>
+            <h3>Standards internationaux, tarifs africains</h3>
+            <p>
+              Nos analyses respectent les mêmes standards qu'un laboratoire
+              suisse ou américain, à des tarifs adaptés aux réalités économiques
+              africaines. Nous refusons que le code économique soit un obstacle
+              à la connaissance génétique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="certif-section">
+      <div class="certif-inner">
+        <h2>Accréditations & Certifications</h2>
+        <p>
+          Nos analyses respectent les normes d'excellence reconnues à
+          l'international.
+        </p>
+        <div class="certif-grid">
+          <div class="certif-card">
+            <div class="certif-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <span class="certif-name">ISO 17025</span>
+            <span class="certif-sub">Compétence des laboratoires d'essais</span>
+          </div>
+
+          <div class="certif-card">
+            <div class="certif-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <span class="certif-name">AABB</span>
+            <span class="certif-sub">Accréditation tests filiation</span>
+          </div>
+
+          <div class="certif-card">
+            <div class="certif-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <polyline points="9 11 12 14 22 4" />
+                <path
+                  d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                />
+              </svg>
+            </div>
+            <span class="certif-name">GDPR Conforme</span>
+            <span class="certif-sub">Protection des données génétiques</span>
+          </div>
+
+          <div class="certif-card">
+            <div class="certif-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <span class="certif-name">NGS Certified</span>
+            <span class="certif-sub">Séquençage next-generation</span>
+          </div>
+
+          <div class="certif-card">
+            <div class="certif-icon">
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="#fff"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+            </div>
+            <span class="certif-name">Forensic Standard</span>
+            <span class="certif-sub">Protocoles médico-légaux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="cta-section">
+      <div class="cta-inner">
+        <h2 class="cta-title">Prêt à commencer votre démarche ?</h2>
+        <p class="cta-desc">
+          Notre équipe vous accompagne de A à Z, en toute confidentialité et
+          sans engagement initial.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="hero-button">Nous contacter</a>
+          <a href="nos-tests.html" class="cta-btn-outline">Voir nos tests</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" id="contact">
+      <div class="footer-header">
+        <div>
+          <img
+            src="assets/logo.png"
+            width="190"
+            height="39"
+            alt="Genlab Africa"
+          />
+          <p>
+            Solutions fiables pour la collecte, l’analyse et la gestion des
+            prélèvements ADN en toute sécurité.
+          </p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tests.html">Nos tests</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+            <li><a href="#temoignages">Témoignages</a></li>
+            <li><a href="#nos-tests">Nos tests</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Email: info@genlab-africa.com</p>
+          <p>Téléphone: +225 07 07 55 34 83</p>
+          <p>
+            <a
+              href="https://www.facebook.com/genlabafricagenlab"
+              target="_blank"
+            >
+              <i class="lab la-facebook"></i>
+            </a>
+            <a href="https://wa.me/2250707553483" target="_blank">
+              <i class="lab la-whatsapp"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <hr width="100%" style="border: 1px solid #fff" />
+      <p>&copy; 2025 Genlab Africa. Tous droits réservés.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+      lucide.createIcons();
+    </script>
+
+    <!-- ===================== JS ===================== -->
+    <script>
+      // Mobile nav
+      const toggle = document.getElementById("navToggle");
+      const nav = document.getElementById("mainNav");
+      toggle.addEventListener("click", () => {
+        const open = toggle.classList.toggle("is-open");
+        nav.classList.toggle("nav-open", open);
+        toggle.setAttribute("aria-expanded", open);
+        toggle.querySelector(".nav-toggle-icon-menu").style.display = open
+          ? "none"
+          : "";
+        toggle.querySelector(".nav-toggle-icon-close").style.display = open
+          ? ""
+          : "none";
+      });
+
+      // Counter animation
+      function animateCounter(el) {
+        const target = parseInt(el.dataset.target);
+        const suffix = el.querySelector("sup")
+          ? el.querySelector("sup").outerHTML
+          : "";
+        const duration = 1800;
+        const startTime = performance.now();
+
+        function update(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.round(eased * target);
+
+          // format with spaces for thousands
+          const formatted =
+            current >= 1000
+              ? current.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
+              : current;
+
+          el.innerHTML = formatted + suffix;
+          if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      }
+
+      // Intersection Observer for counters
+      const counters = document.querySelectorAll(".impact-num[data-target]");
+      const counterObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateCounter(entry.target);
+              counterObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      counters.forEach((c) => counterObserver.observe(c));
+    </script>
+  </body>
+</html>
