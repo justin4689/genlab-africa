@@ -129,7 +129,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  max-width: 1400px;
+  max-width: 1100px;
   margin: 0 auto;
   width: 100%;
   padding: 0 20px;
@@ -177,7 +177,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 420px;
   min-width: 0;
   overflow: visible;
   flex-wrap: nowrap;
@@ -246,7 +245,7 @@ body {
    NOS TESTS
    ===================== */
 .tests {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   padding: 80px 20px;
@@ -335,18 +334,19 @@ body {
 
 .how-it-works-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  padding: 0 20px;
-  gap: 40px; /* ✅ FIX: gap ajouté pour éviter les chevauchements */
+
+  max-width: 1200px;
+  margin: 40px auto;
+  width: 100%;
+  gap: 40px;
 }
 
 .steps {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 35%;
 }
 
 .step {
@@ -358,7 +358,9 @@ body {
 .step-number {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+
+
 }
 
 .step-number-text {
@@ -386,7 +388,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   padding: 0 20px;
@@ -444,7 +446,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch; /* ✅ FIX: était center, les cartes ont maintenant la même hauteur */
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   margin-top: 40px;
